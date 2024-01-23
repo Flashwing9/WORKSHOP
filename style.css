@@ -1,3 +1,5 @@
+/* ========== BASE ========== */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@100;300;400;700;900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -9,12 +11,12 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Lato', sans-serif;
     height: 1000px;
     overflow: hidden;
     background-image: url(/images/starrySky.jpg);
 }
-
 
 header {
     display: flex;
@@ -24,10 +26,10 @@ header {
 }
 
 
-
+/* ========== HEADER ========== */
 .swLogo {
-    width: 26rem;
-    margin-top: 5rem;
+    width: 15rem;
+    margin-top: 2rem;
 }
 
 .buttonBlock {
@@ -40,7 +42,7 @@ header {
     justify-content: center;
     margin-left: 3rem;
     margin-right: 3rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     border-top: 1px solid #FEE123;
     border-width: 0.3rem;
 }
@@ -53,60 +55,56 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25rem;
+    width: 20rem;
     overflow: hidden;
-    height: 7rem;
-    background-size: 300% 300%;
+    height: 5rem;
+    background-size: 500% 500%;
     backdrop-filter: blur(1rem);
-    border-radius: 5rem;
-    transition: 0.5s;
-    animation: gradient_301 5s ease infinite;
+    border-radius: 3.6rem;
+    transition: 0.4s;
+    animation: gradient_301 10s ease infinite;
     border: double 4px transparent;
-    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #FEE123 10%,#ff9c1c 45%, #ff5328 67%, #FFFFFF 87%);
+    background-image: linear-gradient(black, black),  linear-gradient(137.48deg, #FEE123 10%,#ff9c1c 45%, #ff5328 67%, #b82500 87%);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 #container-stars {
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 100%;
     overflow: hidden;
-    transition: 0.5s; 
-    backdrop-filter: blur(1rem);
+    transition: 1s; 
+    backdrop-filter: blur(0.7rem);
     border-radius: 5rem;
 }
 
 strong {
     z-index: 2;
-    font-family: 'Avalors Personal Use';
-    font-size: 12px;
-    letter-spacing: 5px;
-    color: #FFFFFF;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    color: rgb(219, 219, 219);
 }
 
 #glow {
     position: absolute;
     display: flex;
-    width: 12rem;
+    width: 9rem;
 }
 
 .circle {
     width: 100%;
     height: 30px;
     filter: blur(2rem);
-    animation: pulse_3011 4s infinite;
+    animation: pulse_3011 1s infinite; 
     z-index: -1;
 }
 
-.btn:hover #container-stars {
-    z-index: 1;
-    background-color: #212121;
-}
-
 .btn:hover {
+    cursor: pointer;
     transform: scale(1.2)
 }
 
@@ -136,7 +134,7 @@ strong {
     left: -100rem;
     width: 100%;
     height: 100%;
-    animation: animStarRotate 90s linear infinite;
+    animation: animStarRotate 40s linear infinite;
 }
 
 #stars::after {
