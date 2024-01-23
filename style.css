@@ -19,23 +19,50 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 10rem;
+}
+
+
+
+.swLogo {
+    width: 26rem;
+    margin-top: 5rem;
+}
+
+.buttonBlock {
+    display: flex;
+    padding-right: 10rem;
+}
+
+.topBorder {
+    display: flex;
     justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 4rem;
+    border-top: 1px solid #FEE123;
+    border-width: 0.3rem;
+}
+
+.lukeSkywalker {
+    width: 50rem;
 }
 
 .btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20rem;
+    width: 25rem;
     overflow: hidden;
-    height: 5rem;
+    height: 7rem;
     background-size: 300% 300%;
     backdrop-filter: blur(1rem);
     border-radius: 5rem;
     transition: 0.5s;
     animation: gradient_301 5s ease infinite;
     border: double 4px transparent;
-    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #FEE123 10%,#ff9c1c 45%, #201652 67%, #FFFFFF 87%);
+    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #FEE123 10%,#ff9c1c 45%, #ff5328 67%, #FFFFFF 87%);
     background-origin: border-box;
     background-clip: content-box, border-box;
     margin-top: 5rem;
@@ -47,7 +74,7 @@ header {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.5s; 
     backdrop-filter: blur(1rem);
     border-radius: 5rem;
 }
@@ -58,7 +85,6 @@ strong {
     font-size: 12px;
     letter-spacing: 5px;
     color: #FFFFFF;
-    text-shadow: 0 0 4px white;
 }
 
 #glow {
@@ -75,33 +101,25 @@ strong {
     z-index: -1;
 }
 
-.circle:nth-of-type(1) {
-    background: rgba(254, 83, 186, 0.636);
-}
-
-.circle:nth-of-type(2) {
-    background: rgba(142, 81, 234, 0.704);
-}
-
 .btn:hover #container-stars {
     z-index: 1;
     background-color: #212121;
 }
 
 .btn:hover {
-    transform: scale(1.1)
+    transform: scale(1.2)
 }
 
 .btn:active {
-    border: double 4px #FE53BB;
+    border: double 4px #FEE123;
     background-origin: border-box;
     background-clip: content-box, border-box;
     animation: none;
-    transform: scale(1);
+    transform: scale(0.99);
 }
 
 .btn:active .circle {
-    background: #FE53BB;
+    background: #FEE123;
 }
 
 #stars {
