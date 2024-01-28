@@ -25,6 +25,18 @@ header {
     padding-left: 10rem;
 }
 
+table {
+    color: white;
+    width: 35rem;
+    height: 25;
+    font-size: 1.7rem;
+    border-collapse: collapse;
+}
+
+td, tr, th{
+    border: 1px solid white;
+}
+
 
 /* ========== HEADER ========== */
 .swLogo {
@@ -47,9 +59,6 @@ header {
     border-width: 0.3rem;
 }
 
-.peopleTable {
-    border: 1px solid white;
-}
 
 .btn {
     display: flex;

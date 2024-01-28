@@ -3,26 +3,15 @@ const nextButton = document.querySelector(".nextButton");
 
 let pageIndexNum = 0;
 
-// fetch("https://swapi.dev/api/")
-//     .then(function (response) {
-//         return response.json();
-//     })
-//     .then(function (data) {
-
-// });
-
-// console.log(humanResources);
-
 
 fetch('https://swapi.dev/api/people/')
         .then(response => response.json())
         .then(data => {
             const people = data.results;
-            const tableContainer = document.getElementById('peopleTable');
+            console.log(people);
+            const tableContainer = document.querySelector(".peopleTable");
             
-            // Create table element
             const table = document.createElement('table');
-            table.setAttribute('border', '1');
 
             // Create table header
             const tableHeader = document.createElement('thead');
@@ -32,7 +21,6 @@ fetch('https://swapi.dev/api/people/')
                 <th>Height</th>
                 <th>Mass</th>
                 <th>Gender</th>
-                <!-- Add more headers based on the data you want to display -->
             `;
             tableHeader.appendChild(headerRow);
             table.appendChild(tableHeader);
@@ -47,7 +35,6 @@ fetch('https://swapi.dev/api/people/')
                     <td>${person.height}</td>
                     <td>${person.mass}</td>
                     <td>${person.gender}</td>
-                    <!-- Add more cells based on the data you want to display -->
                 `;
                 tableBody.appendChild(row);
             }
