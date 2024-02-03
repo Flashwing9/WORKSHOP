@@ -33,10 +33,10 @@ header {
     margin-top: 2rem;
 }
 
-.buttonBlock {
+/* .buttonBlock {
     display: flex;
     padding-right: 10rem;
-}
+} */
 
 .topBorder {
     display: flex;
@@ -49,7 +49,7 @@ header {
 }
 
 
-.btn {
+/* .btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,30 +205,34 @@ strong {
         transform: scale(0.75);
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
-}
+} */
 
 
 /*//////////BELOW HEADER//////////*/
 table {
     color: white;
-    width: 50rem;
-    height: 28rem;
+    /* width: 70rem; */
     font-size: 1.7rem;
     border-collapse: collapse;
-    margin: 2rem;
+    margin: 0.5rem;
 }
 
 td, tr, th{
     border: 1px solid white;
-    padding: 3px;
+    padding: 2px;
 }
 
 .tableContainer {
     display: flex;
 }
+
+.peopleTable {
+    width: 45rem;
+    margin-right: 5rem;
+}
 /* 
-.imageContainer {
-    display: flex;
+.shipsTable {
+    width: 10rem;
 } */
 
 .charImage {
